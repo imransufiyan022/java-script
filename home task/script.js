@@ -95,7 +95,7 @@ console.log(numbe.padEnd(4, "*"));
 // 5
 const oneword = "happy";
 const twoword = "learning";
-const result = oneword.concat(" ", secondWord)
+const result = oneword.concat(" ", twoword)
 console.log(result);
 console.log(result.charAt(0));
 console.log(result.repeat(2));
@@ -118,9 +118,9 @@ console.log(result.repeat(2));
 
 
 
-const word = "good"
+const alpha = "good"
 const letter = "morning"
-const together = word + " " + letter;
+const together = alpha + " " + letter;
 console.log(together);
 
 const visitorName = "chidi"
@@ -130,7 +130,7 @@ console.log(like);
 const customerName = "Zainab";
 const ticketCount = 3;
 const eventName = "Music Night";
-const bookingMessage = customerName + " " + "booked" + " " + ticketCount + " " + "tickets" + " " + "for"  + " " + eventName + "."
+const bookingMessage = customerName + " booked " + ticketCount + " tickets " + " for " + eventName + ".";
 console.log(bookingMessage);
 const secondMessage = customerName.concat(" booked ", ticketCount, " tickets ", "for ", eventName, ".")
 console.log(secondMessage);
