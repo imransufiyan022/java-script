@@ -134,3 +134,27 @@ const bookingMessage = customerName + " booked " + ticketCount + " tickets " + "
 console.log(bookingMessage);
 const secondMessage = customerName.concat(" booked ", ticketCount, " tickets ", "for ", eventName, ".")
 console.log(secondMessage);
+
+
+// Practice Tasks
+// 1. Create variables for your name, age, and course.
+// 2. Use a template literal to introduce yourself.
+// 3. Create productName, price, and quantity.
+// 4. Display a sentence containing the product name and total cost.
+// 5. Write a three-line welcome message using one template literal.
+// Display all results using console.log().
+
+
+const name = "imran";
+const age = "18";
+const course = "fullstack";
+const introduction = `I am ${name} and i am ${age} i study ${course}.`;
+console.log(introduction);
+
+const productName = "nestle";
+const price = 30;
+const quantity = 20;
+const milo = `${productName} is $${price} and i bought ${quantity} for $${price * quantity}`
+console.log(milo);
+
+const welcome = `hello i am ${name} i am ${age} years old i study ${course} at techstudio, the price to enroll is ${price} blah blah blah blah blah blah blah blah blah blah blah `
