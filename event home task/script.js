@@ -36,15 +36,10 @@ console.log(bookingId.padEnd(5, "*"));
 console.log("See you there! ".repeat(3));
 
 const bookingMessage = "Welcome, " + cleanName +
-"! Your booking for " + eventName +
-" on " + eventDate +
-" at " + venue +
-" has been received. We look forward to seeing you!";
-
+"! Your booking for " + eventName +" on " + eventDate +" at " + venue +" has been received. We look forward to seeing you!";
 console.log(bookingMessage);
 
-const secondMessage = "Welcome, ".concat(
-    cleanName,
+const secondMessage = "Welcome ".concat(cleanName,
     "! Your booking for ", eventName, " on ", eventDate, " at ", venue, " has been received. We look forward to seeing you!"
 );
 console.log(secondMessage);
