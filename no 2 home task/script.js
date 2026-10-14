@@ -185,6 +185,7 @@ if (weight > 0 && weight <= 2) {
     console.log("Delivery: ₦3,000");
 } else if (weight > 5) {
     console.log("Delivery: ₦5,000");
-} else if (weight <= 0) {
+} else {
     console.log("Invalid weight");
 }
+
