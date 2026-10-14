@@ -464,3 +464,100 @@ console.log(Math.sqrt(nummTen));
 // Make a Number Positive — Math.abs()
 const nummm = -71;
 console.log(Math.abs(nummm));
+
+
+
+// TYPE COERCION AND TYPE CONVERSION
+// ----------------------------------------------------
+// TYPE COERCION:
+// Type coercion happens when JavaScript automatically converts a value from one data type to another during an operation.
+const valOne = "5";
+const valTwo = 2;
+console.log(valOne + valTwo);
+// Here, JavaScript converts 2 into a string and joins the two values.
+
+
+// A. When one operand is a string, + joins the values as strings.
+// Order matters because these operations happen from left to right:
+const valThree = "4";
+const valFour = 6;
+const valFive = 3;
+console.log(valFive * (valThree + valFour));
+console.log((valThree + valFour) / valFive);
+console.log(valThree * (valFour + valFive));
+
+// Operators such as -, *, and / convert numeric strings into numbers.
+const valSix = 2;
+console.log(valThree - valSix);
+
+
+// B. If the string cannot be converted into a valid number, the result of its multiplication is NaN, meaning Not a Number:
+const wordd = "Hi" ;
+console.log(wordd * valSix);
+
+//  Booleans in arithmetic
+// C. During numeric conversion, true becomes 1 and false becomes 0.
+console.log(true + 3);
+
+
+
+
+// Explicit type conversion
+// When you deliberately convert a value, it is called explicit conversion.
+const nm = 436; //number
+const nmTwo = "322" //string
+
+// To perform addition, convert `nmTwo` into a number() function using Number():
+console.log(nm + nmTwo);
+// i. Number() — converts a value into a number.
+console.log(Number(nmTwo) + nm);
+
+// ii. String() — converts a value into a string.
+console.log(String(nm) + nmTwo);
+
+// iii. Boolean() — converts a value into true or false.
+console.log(Boolean(0));
+console.log(Boolean(1));
+console.log(Boolean(""));
+
+
+// ======JavaScript Number Methods======
+
+// JavaScript Number methods are built-in functions used to work
+// with numeric values, such as formatting numbers or converting
+// them into strings.
+// We have instance and static methods
+
+// INSTANCE METHODS:
+// Examples:
+// Note: These four methods below return strings.
+// They do not change the original number.
+// 1. toFixed() — formats a number with a specified number of decimal places. toFixed(2) is perfect for working with money. This targets decimal values.
+// EXAMPLE:
+const fix = 156.7895;
+console.log(fix.toFixed(2));
+console.log(fix.toFixed(3));
+
+// 2. toPrecision() — formats a number with a specified number of significant digits. This targets all number values.
+// EXAMPLE:
+const pre =  156.7895;
+console.log(pre.toPrecision(4));
+
+// 3. toString() — converts a number into a string.
+// EXAMPLE:
+const str = 284;
+console.log(str.toString());
+console.log(str.toString() + pre); // str is converted to string here.
+console.log(str + pre); //str not converted to string 
+
+// 4. toExponential() — expresses a number in exponential notation. toExponential() writes a number in exponential notation and returns a string. 
+// EXAMPLE: 
+const nuum = 6500;
+console.log(nuum.toExponential());
+console.log(nuum.toExponential(5));
+
+// 5. Number method - Number() function already discussed above.
+
+// valueOf() Method
+// valueOf() returns a number as a number.
+console.log(nuum.valueOf());
