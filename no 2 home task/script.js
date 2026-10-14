@@ -221,33 +221,41 @@ else if (weight > 0 && weight <= 2) {
 let studentname = prompt("Enter your full name");
 let score = Number(prompt("Enter your examination score (between 0 and 100)"));
 
-let grade;
-let remark;
+let grade= 'U';
+let remark= "TFG";
 
 if (score >= 70 && score <= 100) {
     grade = "A";
     remark = "Excellent";
+    console.log(` you got  ${grade} ${remark}`); 
 }
 else if (score >= 60 && score <= 69) {
     grade = "B";
     remark = "Very Good";
+     console.log(`you got  ${grade} ${remark}`); 
 }
 else if (score >= 50 && score <= 59) {
     grade = "C";
     remark = "Good";
+     console.log(`you got  ${grade} ${remark}`); 
 }
 else if (score >= 40 && score <= 49) {
     grade = "D";
     remark = "Fair";
+     console.log(`you got  ${grade} ${remark}`); 
 }
 else if (score >= 0 && score <= 39) {
     grade = "F";
     remark = "Fail";
+     console.log(`you got  ${grade} ${remark}`); 
 }
 
 let status;
 if (score >= 40) {
     status = "Congratulations! You passed.";
+    console.log(status);
+    
 } else {
     status = "Unfortunately, you failed. Please try again.";
+    console.log(status)
 }
