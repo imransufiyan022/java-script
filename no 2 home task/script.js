@@ -259,3 +259,33 @@ if (score >= 40) {
     status = "Unfortunately, you failed. Please try again.";
     console.log(status)
 }
+
+
+// 1. Nested Conditions: ATM Withdrawal
+const balance = 5000;
+const withdrawalAmount = 5000;
+const enteredPin = "2465";
+
+// The correct PIN is "2468".
+// Check the PIN first. If it is correct, check the withdrawal amount:
+// - Zero or negative: "Enter a valid amount"
+// - Greater than the balance: "Insufficient funds"
+// - Otherwise: "Withdrawal successful" and display the remaining balance
+// If the PIN is incorrect, display "Incorrect PIN".
+
+if (enteredPin === "2468") {
+    if (withdrawalAmount <= 0) {
+        console.log("Enter a valid amount");
+        
+    } else if (withdrawalAmount > balance) {
+        console.log("Insufficient funds");
+        
+    } else {
+        console.log("Withdrawal successful");
+        console.log("Remaining Balance: ", balance - withdrawalAmount);
+        
+    }
+} else {
+    console.log("Incorrect PIN");
+    
+}
